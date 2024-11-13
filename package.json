@@ -10,8 +10,9 @@
     "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "@learn-co-curriculum/jest-learn-reporter": "^0.1.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -35,7 +36,8 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest"
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",
+      "^.+\\.jsx?$": "babel-jest"
     },
     "transformIgnorePatterns": [
       "/node_modules/(?!@adobe/css-tools)"
