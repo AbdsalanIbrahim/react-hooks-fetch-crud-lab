@@ -33,7 +33,6 @@ function QuestionForm({ onAddQuestion }) {
       .then((response) => response.json())
       .then((newQuestion) => {
         onAddQuestion(newQuestion);
-        // Reset the form after submission
         setFormData({
           prompt: "",
           answer1: "",
